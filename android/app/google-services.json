@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "3961871122",
+    "firebase_url": "https://zync-b3bce.firebaseio.com",
+    "project_id": "zync-b3bce",
+    "storage_bucket": "zync-b3bce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3961871122:android:475cb9a804b8c057",
+        "android_client_info": {
+          "package_name": "co.zync.zync"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3961871122-q8fmied416iv7p5ll4cofftodhf98icq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.zync.zync",
+            "certificate_hash": "6c2af54172d9a19e9dd9aadfb6c24a5133292f69"
+          }
+        },
+        {
+          "client_id": "3961871122-vk41lu6gsvoejd2l5imeiq54i8n5c9g0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.zync.zync",
+            "certificate_hash": "043978545d2fafb0d5f6230cf474486d5cca4012"
+          }
+        },
+        {
+          "client_id": "3961871122-llranfhd2ifirm09avfbr558g4i2a375.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.zync.zync",
+            "certificate_hash": "9efa7fce12b13f890f7abbb24de0dd09bdf4807e"
+          }
+        },
+        {
+          "client_id": "3961871122-30t6df316o1v3vov9l4scjku7lj7j9cq.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "3961871122-hh8v6l07dp6r9i26ls3rbskib7juqjck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVl8TJjOPiG1uryRW8xz128T0YeZxfTEs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3961871122-30t6df316o1v3vov9l4scjku7lj7j9cq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "3961871122-2e2nr63l7rqm58j2qsh3h159adddq0ih.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "co.zync.mobile"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
