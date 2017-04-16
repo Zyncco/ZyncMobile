@@ -1,5 +1,5 @@
 import React, { Component, } from 'react'
-import { View, StyleSheet, Image, Text, Button, ActivityIndicator, Alert } from 'react-native'
+import { View, StyleSheet, Image, Text, Button, ActivityIndicator} from 'react-native'
 import * as zync from './zync.js'
 import * as firebase from 'firebase';
 import * as zyncMessaging from './messaging_handler.js';

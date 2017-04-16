@@ -4,6 +4,10 @@ const version = 0;
 
 export default class ZyncAPI {
 
+  constructor(apiKey) {
+    this.token = apiKey;
+  }
+
   static startApi(deviceId, idToken) {
     fetch(base + version + "/user/authenticate", {
       method: 'POST',

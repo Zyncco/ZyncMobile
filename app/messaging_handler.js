@@ -6,6 +6,7 @@ import FCM, {
   NotificationType
 } from 'react-native-fcm';
 import { Platform } from 'react-native';
+import ZyncConfig from './config.js';
 import ZyncAPI from './api/zync_api.js';
 
 var instanceId = null;
@@ -24,6 +25,7 @@ exports.register = function(instanceId) {
         notif['random-token']
       ).then((api) => {
         // do stuff
+        ZyncConfig.setApiKey(notif['zync-token']);
         console.log("Finished logging in!");
       });
     }
