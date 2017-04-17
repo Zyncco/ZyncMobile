@@ -25,10 +25,10 @@ export default class CreditsView extends Component {
            name="Mazen Kotb"
            img={require("../resources/people/mazen_logo.png")}
            title="Java Software Engineer (Mobile Developer)"
-           bio="I'm currently a Canadian Software Engineer and have been programming for 6 years since I
-          was young. Although I've stuck in my hand in around everything, my expertise primarily resides in using JVM languages for
-          backend infrastructures. Outside of Computer Science, I love writing, talking (in front of large groups), and exploring around Vancouver.
-          If you want to chat, feel free to hit me up a message on Telegram."
+           bio="I'm currently a Canadian Software Engineer and have been programming for 6 years since I" +
+          "was young. Although I've stuck in my hand in around everything, my expertise primarily resides in using JVM languages for" +
+          "backend infrastructures. Outside of Computer Science, I love writing, talking (in front of large groups), and exploring around Vancouver." +
+          "If you want to chat, feel free to hit me up a message on Telegram."
            links={[
             "https://github.com/mkotb",
             "https://telegram.me/mazenk"
@@ -41,8 +41,8 @@ export default class CreditsView extends Component {
             name="Amir A. Omidi"
             img={require("../resources/people/amir_logo.png")}
             title="Project Lead, Developer"
-            bio="I'm a student studying Computer Sciences at Drexel University. I love trying out new
-            technologies, frameworks, and gadgets. My career goal is to be a software engineer at a top tech firm."
+            bio="I'm a student studying Computer Sciences at Drexel University. I love trying out new" +
+            "technologies, frameworks, and gadgets. My career goal is to be a software engineer at a top tech firm."
             links={[
               "https://github.com/aaomidi"
             ]}
@@ -53,8 +53,8 @@ export default class CreditsView extends Component {
            name="Brandon (Yeti)"
            img={require("../resources/people/brandon_logo.png")}
            title="Developer"
-           bio="I am a self-taught, self-employed software developer living in the United Kingdom, primarily working
-           with command line / backend applications. I know Java, C#, Python and a handful of other non-programming languages."
+           bio="I am a self-taught, self-employed software developer living in the United Kingdom, primarily working" +
+           "with command line / backend applications. I know Java, C#, Python and a handful of other non-programming languages."
            links={[
              "https://github.com/BranicYeti"
            ]}/>
@@ -65,9 +65,9 @@ export default class CreditsView extends Component {
            name="Vilsol"
            img={require("../resources/people/vilsol_logo.png")}
            title="Server Developer"
-           bio="A software engineer with a passion for virtualization. Mostly spent time as a full-stack developer
-           in many languages, frameworks and platforms, but recently more focused on systems, operations and infrastructure.
-           Left university to pursue my career as well as many side projects including this one."
+           bio="A software engineer with a passion for virtualization. Mostly spent time as a full-stack developer" +
+           "in many languages, frameworks and platforms, but recently more focused on systems, operations and infrastructure." +
+           "Left university to pursue my career as well as many side projects including this one."
            links={[
              "https://github.com/Vilsol",
              "https://keybase.io/vilsol"
@@ -92,9 +92,9 @@ export default class CreditsView extends Component {
            name="Mark Hendricks"
            img={require("../resources/people/mark_logo.png")}
            title="Backend Developer"
-           bio="I'm a Computer Science student at University of Technology in Eindhoven, mainly
-           spending my time experimenting with new solutions and new languages, always aiming for fast
-           and scale-able."
+           bio="I'm a Computer Science student at University of Technology in Eindhoven, mainly" +
+           "spending my time experimenting with new solutions and new languages, always aiming for fast" +
+           "and scale-able."
            links={[
              "https://github.com/DarkSeraphim",
              "https://linkedin.com/in/mark-hendriks-60029391"
