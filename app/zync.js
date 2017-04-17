@@ -4,6 +4,7 @@ import IntroView from './intro.js';
 import PreferenceView from './preference_view.js';
 import CreditsView from './credits.js';
 import {GoogleSignin} from 'react-native-google-signin';
+import * as language from './lang';
 import * as signIn from './sign_in.js';
 import * as firebase from 'firebase';
 
@@ -14,6 +15,7 @@ export const routes = [
       {index: 3}, // preferences
       {index: 4}, // credits
 ];
+export const lang = language.strings;
 export var currentNagivator = null;
 
 // Initialize Firebase
@@ -36,7 +38,7 @@ export class InitialView extends Component {
   render() {
     return (
       <Navigator
-        initialRoute={routes[3]}
+        initialRoute={routes[0]}
         initialRouteStack={routes}
         renderScene={this.renderNavigator}/>
     )

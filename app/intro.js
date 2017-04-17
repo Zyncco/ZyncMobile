@@ -9,12 +9,14 @@ class IntroView extends Component {
       <View>
         <Swiper showButtons={true} loop={false}>
           <FirstIntroView />
-          <SecondIntroView callback={() => {
-              this.props.navigator.jumpTo(zync.routes[1]);
-            }} />
+          <SecondIntroView callback={this.startApp} />
         </Swiper>
       </View>
     )
+  }
+
+  startApp() {
+    zync.currentNagivator.jumpTo(zync.routes[1]);
   }
 }
 
@@ -28,11 +30,11 @@ export class FirstIntroView extends Component {
             height:  225 ,
           }}
           resizeMode="contain"
-          source={{uri:'https://github.com/Zyncco/Android-App/blob/master/app/src/main/res/drawable/zync_white.png?raw=true'}}
-        />
-        <Text style={styles.welcome}>Zync</Text>
-        <Text style={styles.slogan}>End-to-end encrypted cloud clipboard</Text>
-        <Text style={styles.description}>Welcome to Zync! Swipe left to continue!</Text>
+          source={require('../resources/zync/zync_white.png')}
+          />
+        <Text style={styles.welcome}>{zync.lang.app}</Text>
+        <Text style={styles.slogan}>{zync.lang.slogan}</Text>
+        <Text style={styles.description}>{zync.lang.introWelcome}</Text>
       </View>
     );
   }
@@ -45,12 +47,10 @@ export class SecondIntroView extends Component {
         <Image
           style={styles.cloud}
           resizeMode="contain"
-          source={{uri:'https://github.com/Zyncco/Android-App/blob/master/app/src/main/res/drawable/zync_cloud.png?raw=true'}}
-        />
-        <Text style={styles.description}>Zync securely synchronizes the copy/paste function across all your devices,
-          like phones, laptops, and tablets! Simply install, login, you're ready to go! Click the button belowteas
-          to get started!</Text>
-        <Button title="Start" color="white" onPress={this.props.callback} />
+          source={require('../resources/zync/zync_cloud.png')}
+          />
+        <Text style={styles.description}>{zync.lang.introDescription}</Text>
+        <Button title={zync.lang.introStart} color="white" onPress={this.props.callback} />
       </View>
     );
   }

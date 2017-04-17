@@ -14,11 +14,11 @@ export class SignInView extends Component {
     return (
       <View style={styles.container}>
         <Image style={styles.logo}
-          accessibilityLabel="App logo"
-          source={{uri: 'https://github.com/Zyncco/Android-App/blob/master/app/src/main/res/drawable/logo.png?raw=true'}}
+          accessibilityLabel={zync.lang.logoAccessibility}
+          source={require('../resources/zync/logo.png')}
           resizeMode="contain"/>
-        <Text style={styles.name}>Zync</Text>
-        <Text style={styles.caption}>End-to-end encrypted cloud clipboard synchronization</Text>
+        <Text style={styles.name}>{zync.lang.app}</Text>
+        <Text style={styles.caption}>{zync.lang.slogan}</Text>
         <GoogleSigninButton
           style={{width: 200, height: 48}}
           size={GoogleSigninButton.Size.Wide} onPress={this.signIn}/>
@@ -41,7 +41,7 @@ export class SignInView extends Component {
           });
         });
       });
-    }).done();
+    })
   }
 }
 
