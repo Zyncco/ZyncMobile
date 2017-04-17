@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Navigator } from 'react-native';
 import IntroView from './intro.js';
 import PreferenceView from './preference_view.js';
+import CreditsView from './credits.js';
 import {GoogleSignin} from 'react-native-google-signin';
 import * as signIn from './sign_in.js';
 import * as firebase from 'firebase';
@@ -11,6 +12,7 @@ export const routes = [
       {index: 1}, // sign in
       {index: 2}, // sign in loading
       {index: 3}, // preferences
+      {index: 4}, // credits
 ];
 export var currentNagivator = null;
 
@@ -55,6 +57,9 @@ export class InitialView extends Component {
 
       case 3:
         return (<PreferenceView />)
+
+      case 4:
+        return (<CreditsView />)
     }
   }
 }
